@@ -4,12 +4,12 @@ from dotenv import load_dotenv, find_dotenv
 # Loading .env variables
 load_dotenv(find_dotenv())
 
-TELEGRAM_TOKEN = os.getenv("token")
+TELEGRAM_TOKEN = os.getenv("2006966944:AAH5L7E3Yv9hzzkb4_k5-N8MWedEqQ_1DnM")
 if TELEGRAM_TOKEN is None:
     raise Exception("Please setup the .env variable TELEGRAM_TOKEN.")
 
 PORT = int(os.environ.get('PORT', '8443'))
-HEROKU_APP_NAME = os.getenv("namebot")
+HEROKU_APP_NAME = os.getenv("sdtelebot")
 
 TELEGRAM_SUPPORT_CHAT_ID = os.getenv("https://t.me/itgroup63")
 if TELEGRAM_SUPPORT_CHAT_ID is None or not str(TELEGRAM_SUPPORT_CHAT_ID).lstrip("-").isdigit():
